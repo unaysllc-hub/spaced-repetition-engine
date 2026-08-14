@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spaced-repetition-engine"
+version = "1.0.0"
+description = "A dependency-free, local-first spaced-repetition scheduling engine"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Unays LLC"}]
+
+[project.scripts]
+spaced-review = "spaced_repetition_engine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
